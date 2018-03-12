@@ -8,7 +8,16 @@ module.exports={
           { 
             test: /\.js$/, 
             exclude: /node_modules/, 
-            loader: "babel-loader" 
+            loader: "babel-loader" ,
+           
+          },
+          {
+            test: /\.css$/,
+            use: [ 'style-loader', 'css-loader' ]
+          },
+          {
+            test: /\.bundle\.js$/,
+            use: 'bundle-loader'
           }
         ]
     },

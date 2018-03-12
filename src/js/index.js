@@ -6,6 +6,6 @@ import css from '../css/style.css';
 
 const root = document.getElementById('root');
 ReactDOM.render(
-  <Person name="sample app" />,
+  <Person name="Swastika" />,
   root,
 );

@@ -1,8 +1,8 @@
 {
-  "name": "react-demo-app-sample",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-dogs-demo",
+  "version": "1.0.0",
+  "description": "sample demo app in react",
+  "main": "src/js/index.js",
   "scripts": {
     "start": "webpack -w --mode development",
     "prod": "webpack --mode production",
@@ -10,29 +10,49 @@
     "linter": "eslint --fix src/**/*.js",
     "precommit": "lint-staged"
   },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "lint-staged": {},
   "repository": {
     "type": "git",
+    "url": "git+https://github.com/swastikasingh0301/react-demo-app-sample.git"
+  },
+  "keywords": [
+    "react",
+    "demo",
+    "app",
+    "sample"
+  ],
+  "author": "Swastika Singh <swastika.singh.0301@gmail.com>",
+  "license": "MIT",
+  "bugs": {
     "url": "https://github.com/swastikasingh0301/react-demo-app-sample.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/swastikasingh0301/react-demo-app-sample/issues"
+  "homepage": "https://github.com/swastikasingh0301/react-demo-app-sample.git",
+  "dependencies": {
+    "bundle-loader": "^0.5.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
-  "homepage": "https://github.com/swastikasingh0301/react-demo-app-sample",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
     "eslint": "^4.18.2",
-    "webpack": "^4.1.1"
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "node-sass": "^4.7.2",
+    "prettier": "1.11.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
   }
 }
