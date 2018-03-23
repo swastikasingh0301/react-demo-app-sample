@@ -5,9 +5,10 @@ export const USER = {
   
   export const COMMENT = {
     date: new Date(),
-    text: 'I hope you enjoy learning React!',
+    text: 'Have a great day!!',
     author: {
-      name: 'Hello Kitty',
+      name: 'Hello Everyone',
       avatarUrl: 'http://placekitten.com/g/64/64',
     }
   };
+  export default COMMENT;

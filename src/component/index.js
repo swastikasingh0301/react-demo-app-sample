@@ -6,7 +6,9 @@ import Element from './formatname';
 import Welcome from './welcome'
 // import Timezone from './timezone'
 import Comment from '../component/comment/comment';
-import {COMMENT} from './const'
+import {COMMENT} from './const';
+import RouterExample from './routerexample';
+//import Clock from './clock';
 // import Lifecycle from './lifecycle'
 // import App from './error/error';
 
@@ -28,6 +30,7 @@ class Person extends Component {
           author={COMMENT.author}
         />
         <Element name="Harsh" />
+        <RouterExample />
       </React.Fragment>
       
       

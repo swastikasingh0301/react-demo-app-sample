@@ -3,15 +3,14 @@ import React, { Component } from 'react';
 class Timer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { seconds: 0 };
+    this.state = { time: new Date().toLocaleString() };
     // console.log(this.props)
   }
 
   tick() {
-    // console.log("update" ,this.props)
-    this.setState(prevState => ({
-      seconds: prevState.seconds + 1,
-    }));
+    this.setState({
+      time: new Date().toLocaleString()
+    });
   }
 
   componentDidMount() {
@@ -28,7 +27,7 @@ class Timer extends React.Component {
   render() {
     return (
       <div>
-          Seconds: {this.state.seconds}
+          Seconds: {this.state.time}
       </div>
     );
   }

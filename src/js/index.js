@@ -5,7 +5,8 @@ import css from '../css/style.css';
 //import '../css/scss/index.scss';
 
 const root = document.getElementById('root');
+
 ReactDOM.render(
   <Person name="Swastika" />,
-  root,
+  root
 );

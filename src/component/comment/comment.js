@@ -11,7 +11,7 @@ return (
         alt={props.author.name}
         />
         <div className="UserInfo-name">
-        <Welcome />
+        <Welcome msg="Coding is fun!!"/>
         {props.author.name}
         </div>
     </div>
